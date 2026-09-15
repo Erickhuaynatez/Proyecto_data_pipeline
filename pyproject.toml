@@ -17,4 +17,8 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths=["tests"]
 pythonpath=["src"]
+addopts=["--strict-markers"]
 
+markers=[
+    "integration: prueba que requiere Internet o servicios externos"
+]
